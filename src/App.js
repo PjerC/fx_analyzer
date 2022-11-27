@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+//import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+import Dashboard from './Dashboard.js';
+import CenterModule from './CenterModule.js';
+import Footer from './Footer.js';
 import './App.css';
 
-function App() {
+const App = (props) => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="d-flex text-secondary flex-column justify-content-center align-items-center m-1">
+      <Dashboard/>
+      <CenterModule/>
+      <Footer/>
     </div>
   );
 }
