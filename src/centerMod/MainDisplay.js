@@ -23,7 +23,10 @@ const MainDisplay = (props) => {
         <div className="d-flex flex-column justify-content-center align-items-center border border-secondary w-100">
             {
                 itemsArray.map((items)=> 
-                    <div id={items.title} className="border border-primary p-1 m-1" key={items.no}>array element:{items.no}, {items.title} </div>    
+                    <div id={items.title} className="border border-primary p-1 m-1" key={items.no}>
+                        <p>array element:</p>
+                        {items.no}, {items.title}
+                    </div>    
             )}
         </div>
     )
